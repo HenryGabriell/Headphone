@@ -57,7 +57,6 @@ body {
 h1 {
     font-size: 3rem;
     color: #2b2b2b;
-    line-height: 1.2;
 }
 
 .tagline {
@@ -70,6 +69,7 @@ h1 {
     font-size: 1rem;
     color: #555;
     margin-top: 20px;
+    text-align: justify;
 }
 
 .image-container {
@@ -78,18 +78,49 @@ h1 {
 }
 
 .image-container img {
-    width: 80%;
+    width: 83%;
     object-fit: contain;
 }
 
-/* Circular Navigation on the Left */
-.nav-left {
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 
 
+/*----------RESPONSIVIDADE--------------*/
+
+
+@media screen and (max-width: 768px){
+    h1 {
+        font-size: 1.4rem;
+        color: #2b2b2b;
+    }
+    .description {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        text-align: justify;
+    }
+    .tagline{
+        font-size: 1rem;
+    }
+    .navbar {
+        margin-top: 17px;
+    }
+    .navbar ul {
+        gap: 0px;
+    }
+    .navbar ul li a {
+        padding: 0px 35px;
+    }
+    .container {
+        justify-content: space-between;
+        width: 80%;
+        max-width: 1000px;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.071);
+    }
+    body{
+        height: 85vh;
+    }
+    .image-container {
+        width: 100%;
+    }
+} 
